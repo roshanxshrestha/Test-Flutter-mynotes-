@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1008304341302-gnjrp6j5q690ocprkqpov7jh0grgmoae.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1008304341302</string>
+    <string name="google_api_key" translatable="false">AIzaSyBqZw86nv0ZGrD6ebfJLNMPuH963HYjnwo</string>
+    <string name="google_app_id" translatable="false">1:1008304341302:android:502fc41ab30ad328e17397</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBqZw86nv0ZGrD6ebfJLNMPuH963HYjnwo</string>
+    <string name="google_storage_bucket" translatable="false">mynotes-flutter-roshan.appspot.com</string>
+    <string name="project_id" translatable="false">mynotes-flutter-roshan</string>
+</resources>

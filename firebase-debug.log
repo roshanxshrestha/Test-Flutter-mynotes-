@@ -1,0 +1,31 @@
+[debug] [2022-06-24T01:02:00.252Z] ----------------------------------------------------------------------
+[debug] [2022-06-24T01:02:00.253Z] Command:       /Users/user/.nvm/versions/node/v18.4.0/bin/node /Users/user/.nvm/versions/node/v18.4.0/bin/firebase projects:list --json
+[debug] [2022-06-24T01:02:00.254Z] CLI Version:   11.1.0
+[debug] [2022-06-24T01:02:00.254Z] Platform:      darwin
+[debug] [2022-06-24T01:02:00.254Z] Node Version:  v18.4.0
+[debug] [2022-06-24T01:02:00.255Z] Time:          Fri Jun 24 2022 06:47:00 GMT+0545 (Nepal Time)
+[debug] [2022-06-24T01:02:00.255Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-24T01:02:00.262Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-24T01:02:00.263Z] > authorizing via signed-in user (roshanstha2815@gmail.com)
+[debug] [2022-06-24T01:02:00.267Z] > refreshing access token with scopes: []
+[debug] [2022-06-24T01:02:00.269Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-06-24T01:02:00.269Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-06-24T01:02:00.355Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2022-06-24T01:02:00.357Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (/Users/user/.nvm/versions/node/v18.4.0/lib/node_modules/firebase-tools/lib/auth.js:145:12)
+    at refreshTokens (/Users/user/.nvm/versions/node/v18.4.0/lib/node_modules/firebase-tools/lib/auth.js:511:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.getAccessToken (/Users/user/.nvm/versions/node/v18.4.0/lib/node_modules/firebase-tools/lib/apiv2.js:148:23)
+    at async Client.addAuthHeader (/Users/user/.nvm/versions/node/v18.4.0/lib/node_modules/firebase-tools/lib/apiv2.js:139:21)
+    at async Client.request (/Users/user/.nvm/versions/node/v18.4.0/lib/node_modules/firebase-tools/lib/apiv2.js:95:34)
+    at async getProjectPage (/Users/user/.nvm/versions/node/v18.4.0/lib/node_modules/firebase-tools/lib/management/projects.js:239:17)
+    at async getFirebaseProjectPage (/Users/user/.nvm/versions/node/v18.4.0/lib/node_modules/firebase-tools/lib/management/projects.js:256:23)
+    at async listFirebaseProjects (/Users/user/.nvm/versions/node/v18.4.0/lib/node_modules/firebase-tools/lib/management/projects.js:287:29)
+    at async Command.actionFn (/Users/user/.nvm/versions/node/v18.4.0/lib/node_modules/firebase-tools/lib/commands/projects-list.js:51:20)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
