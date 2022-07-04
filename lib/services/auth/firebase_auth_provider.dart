@@ -98,13 +98,6 @@ class FirebaseAuthProvider implements AuthProvider {
   }
 
   @override
-  Future<AuthUser> createUseer(
-      {required String email, required String password}) {
-    // TODO: implement createUseer
-    throw UnimplementedError();
-  }
-
-  @override
   Future<void> initialize() async {
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
